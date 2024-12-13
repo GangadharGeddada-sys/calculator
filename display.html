@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <div class="calculator">
+    <input id="display" readonly>
+    <div id="keys">
+    <button onclick="visible('+')" class="op">+</button>
+    <button onclick="visible('7')">7</button>
+    <button onclick="visible('8')">8</button>
+    <button onclick="visible('9')">9</button>
+    <button onclick="visible('-')" class="op">-</button>
+    <button onclick="visible('4')">4</button>
+    <button onclick="visible('5')">5</button>
+    <button onclick="visible('6')">6</button>
+    <button onclick="visible('*')" class="op">*</button>
+    <button onclick="visible('1')">1</button>
+    <button onclick="visible('2')">2</button>
+    <button onclick="visible('3')">3</button>
+    <button onclick="visible('/')" class="op">/</button>
+    <button onclick="visible('0')">0</button>
+    <button onclick="visible('.')">.</button>
+    <button onclick="Cal()" class="op">=</button>
+    <button onclick="cleardata()">clear</button>
+    
+    </div>
+   </div>
+    <script src="java.js"></script>
+</body>
+</html>
