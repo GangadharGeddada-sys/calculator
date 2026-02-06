@@ -1,0 +1,68 @@
+[
+  {
+    "district": "Visakhapatnam",
+    "mandal": "Araku Valley",
+    "village": "Padmapuram",
+    "population": "4,850",
+    "households": "1,140",
+    "occupation": "Coffee plantations & eco-tourism",
+    "sarpanch": "S. Lakshmi Devi",
+    "contact": "+91 98765 43210",
+    "focus": "Organic farming, homestay tourism"
+  },
+  {
+    "district": "East Godavari",
+    "mandal": "Kadiyam",
+    "village": "Gollaprolu",
+    "population": "6,200",
+    "households": "1,520",
+    "occupation": "Floriculture & paddy",
+    "sarpanch": "R. Venkatesh",
+    "contact": "+91 98765 44221",
+    "focus": "Nursery development, irrigation"
+  },
+  {
+    "district": "Guntur",
+    "mandal": "Mangalagiri",
+    "village": "Atmakur",
+    "population": "5,430",
+    "households": "1,310",
+    "occupation": "Handloom & trade",
+    "sarpanch": "K. Sujatha",
+    "contact": "+91 98765 67890",
+    "focus": "Skill training, women SHGs"
+  },
+  {
+    "district": "Kurnool",
+    "mandal": "Nandyal",
+    "village": "Srisailam",
+    "population": "7,180",
+    "households": "1,760",
+    "occupation": "Temple tourism & agriculture",
+    "sarpanch": "M. Ravi Teja",
+    "contact": "+91 98765 77882",
+    "focus": "Heritage conservation, clean ghats"
+  },
+  {
+    "district": "Chittoor",
+    "mandal": "Tirupati Rural",
+    "village": "Chandragiri",
+    "population": "8,920",
+    "households": "2,140",
+    "occupation": "Handicrafts & dairy",
+    "sarpanch": "P. Jyothi",
+    "contact": "+91 98765 55667",
+    "focus": "Heritage tourism, dairy clusters"
+  },
+  {
+    "district": "Krishna",
+    "mandal": "Gudivada",
+    "village": "Pedaparupudi",
+    "population": "4,670",
+    "households": "1,080",
+    "occupation": "Aquaculture & rice",
+    "sarpanch": "N. Shankar",
+    "contact": "+91 98765 33441",
+    "focus": "Cold storage, fisheries training"
+  }
+]
