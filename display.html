@@ -1,35 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andhra Pradesh Rural Connect</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="calculator">
-    <input id="display" readonly>
-    <div id="keys">
-    <button onclick="visible('+')" class="op">+</button>
-    <button onclick="visible('7')">7</button>
-    <button onclick="visible('8')">8</button>
-    <button onclick="visible('9')">9</button>
-    <button onclick="visible('-')" class="op">-</button>
-    <button onclick="visible('4')">4</button>
-    <button onclick="visible('5')">5</button>
-    <button onclick="visible('6')">6</button>
-    <button onclick="visible('*')" class="op">*</button>
-    <button onclick="visible('1')">1</button>
-    <button onclick="visible('2')">2</button>
-    <button onclick="visible('3')">3</button>
-    <button onclick="visible('/')" class="op">/</button>
-    <button onclick="visible('0')">0</button>
-    <button onclick="visible('.')">.</button>
-    <button onclick="Cal()" class="op">=</button>
-    <button onclick="cleardata()">clear</button>
-    
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">AP</span>
+      <div>
+        <p class="brand-title">Andhra Pradesh State</p>
+        <p class="brand-subtitle">Rural Governance & Citizen Services</p>
+      </div>
     </div>
-   </div>
-    <script src="java.js"></script>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#hierarchy">Hierarchy</a>
+      <a href="#sarpanch-login">Sarpanch Login</a>
+      <a href="#admin-login">Admin Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">People • Progress • Governance</p>
+        <h1>Connecting Andhra Pradesh villages with transparent digital governance.</h1>
+        <p class="hero-description">
+          Andhra Pradesh is known for iconic landmarks like Tirumala, Araku Valley, and the
+          scenic Konaseema backwaters. This platform connects citizens with village leadership,
+          enabling faster communication, better planning, and accountable public services.
+        </p>
+        <div class="hero-highlights">
+          <div>
+            <h3>26 Districts</h3>
+            <p>Covering coastal, rayalaseema, and tribal regions.</p>
+          </div>
+          <div>
+            <h3>15,000+ Villages</h3>
+            <p>Digitally mapped for easier service delivery.</p>
+          </div>
+          <div>
+            <h3>Focus on Welfare</h3>
+            <p>Integrated with health, education, and livelihoods.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Araku Valley in Andhra Pradesh"></div>
+        <div class="map-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Andhra_Pradesh_districts_map.png" alt="Andhra Pradesh map">
+          <div>
+            <h4>Andhra Pradesh Map</h4>
+            <p>Administrative boundaries and districts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hierarchy">
+      <div class="section-header">
+        <h2>State Governance Hierarchy</h2>
+        <p>Visual representation from state leadership to village administration.</p>
+      </div>
+      <div class="hierarchy-grid">
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/crown.png" alt="Governor">
+          <h3>Governor & Chief Minister</h3>
+          <p>Strategic leadership and statewide policy direction.</p>
+        </div>
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/city-hall.png" alt="Secretariat">
+          <h3>State Secretariat</h3>
+          <p>Departments that oversee implementation.</p>
+        </div>
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/administrative-tools.png" alt="District Collector">
+          <h3>District Collector</h3>
+          <p>District administration and development control.</p>
+        </div>
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/organization.png" alt="Mandal">
+          <h3>Mandal Development Office</h3>
+          <p>Field coordination for service delivery.</p>
+        </div>
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/village.png" alt="Gram Panchayat">
+          <h3>Gram Panchayat</h3>
+          <p>Village governance and citizen engagement.</p>
+        </div>
+        <div class="hierarchy-card">
+          <img src="https://img.icons8.com/fluency/96/people-working-together.png" alt="Village Volunteers">
+          <h3>Village Volunteers</h3>
+          <p>On-ground support for welfare schemes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sarpanch-login">
+      <div class="section-header">
+        <h2>Sarpanch Login</h2>
+        <p>Select your location, verify OTP, and access the village dashboard.</p>
+      </div>
+      <div class="card-grid">
+        <form class="card" id="sarpanch-form">
+          <label>
+            District
+            <select id="district-select" required>
+              <option value="">Select district</option>
+            </select>
+          </label>
+          <label>
+            Mandal
+            <select id="mandal-select" required>
+              <option value="">Select mandal</option>
+            </select>
+          </label>
+          <label>
+            Village
+            <select id="village-select" required>
+              <option value="">Select village</option>
+            </select>
+          </label>
+          <label>
+            Mobile Number
+            <input type="tel" id="mobile-number" placeholder="10-digit mobile" required>
+          </label>
+          <div class="otp-actions">
+            <button type="button" class="primary" id="generate-otp">Generate OTP</button>
+            <span class="otp-hint" id="otp-hint">OTP will appear here for demo.</span>
+          </div>
+          <label>
+            Enter OTP
+            <input type="text" id="otp-input" placeholder="Enter OTP" required>
+          </label>
+          <button type="submit" class="primary">Verify & Login</button>
+        </form>
+        <div class="card" id="sarpanch-dashboard">
+          <h3>Village Dashboard</h3>
+          <p class="muted">Login to view details.</p>
+          <div class="dashboard-details hidden">
+            <div>
+              <h4 id="village-name">--</h4>
+              <p id="village-district">--</p>
+            </div>
+            <div class="stats">
+              <div>
+                <h5>Population</h5>
+                <p id="village-population">--</p>
+              </div>
+              <div>
+                <h5>Households</h5>
+                <p id="village-households">--</p>
+              </div>
+              <div>
+                <h5>Primary Occupation</h5>
+                <p id="village-occupation">--</p>
+              </div>
+            </div>
+            <div class="info-grid">
+              <div>
+                <h5>Sarpanch</h5>
+                <p id="village-sarpanch">--</p>
+              </div>
+              <div>
+                <h5>Contact</h5>
+                <p id="village-contact">--</p>
+              </div>
+              <div>
+                <h5>Key Development Focus</h5>
+                <p id="village-focus">--</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="admin-login">
+      <div class="section-header">
+        <h2>Admin Login</h2>
+        <p>Access the Sarpanch roster for district-level oversight.</p>
+      </div>
+      <div class="card-grid">
+        <form class="card" id="admin-form">
+          <label>
+            Email
+            <input type="email" id="admin-email" value="admin@gmail.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" id="admin-password" value="12345" required>
+          </label>
+          <button type="submit" class="primary">Login as Admin</button>
+          <p class="hint">Default credentials: admin@gmail.com / 12345</p>
+        </form>
+        <div class="card" id="admin-dashboard">
+          <h3>Sarpanch Directory</h3>
+          <p class="muted">Login to view the list.</p>
+          <div class="dashboard-details hidden">
+            <table>
+              <thead>
+                <tr>
+                  <th>District</th>
+                  <th>Mandal</th>
+                  <th>Village</th>
+                  <th>Sarpanch</th>
+                  <th>Contact</th>
+                </tr>
+              </thead>
+              <tbody id="sarpanch-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Andhra Pradesh Rural Connect • For demonstration and planning use only.</p>
+  </footer>
+
+  <script src="java.js"></script>
 </body>
 </html>
